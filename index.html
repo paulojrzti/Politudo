@@ -211,6 +211,13 @@
       margin-top: 0;
     }
 
+    p strong,
+    li strong,
+    .section-lead strong {
+      color: var(--navy);
+      font-weight: 900;
+    }
+
     h1 {
       max-width: 780px;
       margin-bottom: 14px;
@@ -224,6 +231,11 @@
       color: rgba(255, 255, 255, .9);
       font-size: clamp(1rem, 1.55vw, 1.12rem);
       margin-bottom: 0;
+    }
+
+    .hero-text strong,
+    .hero .proof strong {
+      color: var(--yellow);
     }
 
     .hero-actions {
@@ -499,6 +511,10 @@
 
     .reviews .section-lead {
       color: rgba(255, 255, 255, .78);
+    }
+
+    .reviews .section-lead strong {
+      color: var(--yellow);
     }
 
     .review-grid {
@@ -937,7 +953,7 @@
         <div>
           <span class="eyebrow">Polimento, limpeza e impermeabilização</span>
           <h1>Empresa de Restauração e Polimento de Pisos em Vila Velha e Grande Vitória</h1>
-          <p class="hero-text">Recupere o brilho de "piso novo" sem precisar trocar o revestimento. Especialistas em polimento e restauração de mármore, granito e porcelanato, com atendimento rápido em Vila Velha e toda a Grande Vitória.</p>
+          <p class="hero-text">Recupere o brilho de <strong>"piso novo"</strong> sem precisar trocar o revestimento. Especialistas em <strong>polimento e restauração de mármore, granito e porcelanato</strong>, com atendimento rápido em <strong>Vila Velha e toda a Grande Vitória</strong>.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="https://wa.me/5527997419868?text=Ola%2C%20quero%20um%20diagnostico%20gratuito%20para%20meu%20piso.">
               <svg class="whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16.04 3.2c-7.05 0-12.78 5.65-12.78 12.6 0 2.38.68 4.7 1.96 6.72L3.14 28.8l6.52-2.02a12.9 12.9 0 0 0 6.38 1.66c7.05 0 12.78-5.65 12.78-12.6S23.09 3.2 16.04 3.2Zm0 22.98c-2.05 0-4.05-.6-5.76-1.72l-.41-.27-3.86 1.2 1.23-3.72-.28-.43a10.22 10.22 0 0 1-1.58-5.44c0-5.69 4.78-10.32 10.66-10.32 5.88 0 10.66 4.63 10.66 10.32 0 5.7-4.78 10.38-10.66 10.38Zm5.84-7.74c-.32-.16-1.9-.92-2.2-1.03-.29-.1-.5-.16-.71.16-.21.31-.82 1.03-1 1.24-.19.21-.37.24-.69.08-.32-.16-1.35-.49-2.57-1.56-.95-.83-1.59-1.86-1.78-2.17-.19-.32-.02-.49.14-.65.15-.14.32-.37.48-.55.16-.19.21-.32.32-.53.1-.21.05-.4-.03-.55-.08-.16-.71-1.69-.98-2.32-.26-.61-.52-.53-.71-.54h-.61c-.21 0-.55.08-.84.4-.29.31-1.11 1.07-1.11 2.61 0 1.53 1.14 3.02 1.3 3.23.16.21 2.25 3.38 5.45 4.74.76.32 1.36.51 1.82.65.77.24 1.47.21 2.02.13.62-.09 1.9-.77 2.17-1.5.27-.74.27-1.37.19-1.5-.08-.13-.29-.21-.61-.37Z"/></svg>
@@ -971,7 +987,7 @@
             <span class="eyebrow">Serviços especializados</span>
             <h2>Serviços de Limpeza Técnica e Impermeabilização de Pedras Nobres</h2>
           </div>
-          <p class="section-lead">Seu piso manchado, riscado ou sem brilho não precisa ser substituído sem uma avaliação técnica. A Politudo identifica o material e aplica o processo certo para recuperar beleza, proteção e valor.</p>
+          <p class="section-lead">Seu piso <strong>manchado, riscado ou sem brilho</strong> não precisa ser substituído sem uma avaliação técnica. A Politudo identifica o material e aplica o processo certo para recuperar <strong>beleza, proteção e valor</strong>.</p>
         </div>
 
         <div class="service-grid">
@@ -985,7 +1001,7 @@
               </svg>
             </div>
             <h3>Brilho espelhado</h3>
-            <p>Remova riscos e manchas, devolvendo a sofisticação ao ambiente com polimento de mármore, granito, porcelanato e pedras naturais.</p>
+            <p>Remova <strong>riscos e manchas</strong>, devolvendo a sofisticação ao ambiente com polimento de mármore, granito, porcelanato e pedras naturais.</p>
           </article>
           <article class="service">
             <div class="service-icon" aria-hidden="true">
@@ -997,7 +1013,7 @@
               </svg>
             </div>
             <h3>Blindagem contra manchas</h3>
-            <p>Proteja seu investimento contra café, vinho, umidade e desgaste, facilitando a limpeza diária em áreas internas e de alto tráfego.</p>
+            <p>Proteja seu investimento contra <strong>café, vinho, umidade e desgaste</strong>, facilitando a limpeza diária em áreas internas e de alto tráfego.</p>
           </article>
           <article class="service">
             <div class="service-icon" aria-hidden="true">
@@ -1011,7 +1027,7 @@
               </svg>
             </div>
             <h3>Renovação profunda</h3>
-            <p>Remova encardidos e resíduos que produtos comuns de supermercado não conseguem tirar, sem agredir o revestimento.</p>
+            <p>Remova <strong>encardidos e resíduos</strong> que produtos comuns de supermercado não conseguem tirar, sem agredir o revestimento.</p>
           </article>
           <article class="service">
             <div class="service-icon" aria-hidden="true">
@@ -1025,7 +1041,7 @@
               </svg>
             </div>
             <h3>Revitalização segura</h3>
-            <p>Recupere cor, uniformidade e sensação de piso novo com maquinário e produtos adequados para cada superfície.</p>
+            <p>Recupere <strong>cor, uniformidade e sensação de piso novo</strong> com maquinário e produtos adequados para cada superfície.</p>
           </article>
         </div>
       </div>
@@ -1040,12 +1056,12 @@
         <div>
           <span class="eyebrow">Método de trabalho</span>
           <h2>Processo técnico para reduzir o risco de dano ao seu revestimento</h2>
-          <p class="section-lead">Mármore, granito, porcelanato e Pedra São Tomé exigem abrasivos, produtos e pressão corretos. A Politudo atua na prevenção, restauração e tratamento de pisos, revestimentos e conservação de ambientes com critério antes de qualquer intervenção.</p>
+          <p class="section-lead"><strong>Mármore, granito, porcelanato e Pedra São Tomé</strong> exigem abrasivos, produtos e pressão corretos. A Politudo atua na prevenção, restauração e tratamento de pisos, revestimentos e conservação de ambientes com <strong>critério antes de qualquer intervenção</strong>.</p>
           <ul class="checks">
-            <li>Análise do tipo de pedra, porcelanato ou revestimento antes do início.</li>
-            <li>Proteção das áreas próximas e cuidado com rodapés, paredes, portas e mobiliário.</li>
-            <li>Processo indicado para recuperar brilho, remover marcas e proteger o piso sem improviso.</li>
-            <li>Atendimento para arquitetos, síndicos, apartamentos, casas, condomínios, lojas e empresas.</li>
+            <li><strong>Análise do tipo de pedra</strong>, porcelanato ou revestimento antes do início.</li>
+            <li><strong>Proteção das áreas próximas</strong> e cuidado com rodapés, paredes, portas e mobiliário.</li>
+            <li>Processo indicado para <strong>recuperar brilho, remover marcas e proteger o piso</strong> sem improviso.</li>
+            <li>Atendimento para <strong>arquitetos, síndicos, apartamentos, casas, condomínios, lojas e empresas</strong>.</li>
           </ul>
         </div>
       </div>
@@ -1058,7 +1074,7 @@
             <span class="eyebrow">Materiais atendidos</span>
             <h2>Restauração de Mármore, Granito, Porcelanato e Pedra São Tomé</h2>
           </div>
-          <p class="section-lead">O foco é restaurar sem improviso: cada material pede abrasivo, produto, pressão e finalização corretos para evitar manchas, riscos e perda de acabamento. Também atendemos quem busca como limpar Pedra São Tomé encardida ou restaurar porcelanato em Vitória ES.</p>
+          <p class="section-lead">O foco é <strong>restaurar sem improviso</strong>: cada material pede abrasivo, produto, pressão e finalização corretos para evitar manchas, riscos e perda de acabamento. Também atendemos quem busca <strong>como limpar Pedra São Tomé encardida</strong> ou <strong>restaurar porcelanato em Vitória ES</strong>.</p>
         </div>
         <div class="material-row" aria-label="Tipos de pisos">
           <article class="material-card">
@@ -1104,7 +1120,7 @@
             <span class="eyebrow">Serviços realizados</span>
             <h2>Acabamento visível em ambientes reais</h2>
           </div>
-          <p class="section-lead">Fotos de trabalhos executados pela equipe, com foco em brilho, limpeza, uniformidade e recuperação do aspecto original do piso.</p>
+          <p class="section-lead">Fotos de trabalhos executados pela equipe, com foco em <strong>brilho, limpeza, uniformidade</strong> e recuperação do aspecto original do piso.</p>
         </div>
         <div class="gallery">
           <figure>
@@ -1138,7 +1154,7 @@
             <span class="eyebrow">Clientes satisfeitos</span>
             <h2>Empresa nota máxima no Google para restauração de pisos</h2>
           </div>
-          <p class="section-lead">Clientes procuram a Politudo quando precisam recuperar um piso caro sem correr o risco de um acabamento amador. A empresa aparece com nota 5,0 no Google e também tem avaliações positivas na web, incluindo Facebook.</p>
+          <p class="section-lead">Clientes procuram a Politudo quando precisam <strong>recuperar um piso caro sem correr o risco de um acabamento amador</strong>. A empresa aparece com <strong>nota 5,0 no Google</strong> e também tem avaliações positivas na web, incluindo Facebook.</p>
         </div>
         <div class="elfsight-app-718a3bd6-0afc-46e1-8403-06f788d258e1" data-elfsight-app-lazy></div>
       </div>
@@ -1149,7 +1165,7 @@
         <div>
           <span class="eyebrow">Atendimento local</span>
           <h2>Atendemos residências, condomínios e empresas em Itapuã, Praia da Costa e região</h2>
-          <p class="section-lead">Com base em Itapuã, a Politudo é referência em empresa de polimento de mármore em Vila Velha, restauração de porcelanato em Vitória ES e limpeza técnica de pisos na Grande Vitória.</p>
+          <p class="section-lead">Com base em <strong>Itapuã</strong>, a Politudo é referência em <strong>empresa de polimento de mármore em Vila Velha</strong>, restauração de porcelanato em Vitória ES e limpeza técnica de pisos na <strong>Grande Vitória</strong>.</p>
         </div>
         <div class="city-list" aria-label="Cidades atendidas">
           <div class="city">Vila Velha</div>
@@ -1171,28 +1187,28 @@
             <span class="eyebrow">Dúvidas comuns</span>
             <h2>Perguntas sobre restauração de pisos</h2>
           </div>
-          <p class="section-lead">Respostas objetivas para quem procura polimento de piso, impermeabilização ou limpeza especializada na Grande Vitória.</p>
+          <p class="section-lead">Respostas objetivas para quem procura <strong>polimento de piso, impermeabilização ou limpeza especializada</strong> na Grande Vitória.</p>
         </div>
         <div class="faq-grid">
           <details>
             <summary>Quando vale a pena polir o piso?</summary>
-            <p>Quando o piso perdeu brilho, está riscado, manchado ou com aspecto opaco. A avaliação indica se o melhor caminho é polimento, limpeza técnica, restauração ou proteção.</p>
+            <p>Quando o piso perdeu <strong>brilho</strong>, está <strong>riscado, manchado ou com aspecto opaco</strong>. A avaliação indica se o melhor caminho é polimento, limpeza técnica, restauração ou proteção.</p>
           </details>
           <details>
             <summary>A Politudo atende condomínios e empresas?</summary>
-            <p>Sim. A equipe atende residências, apartamentos, condomínios, lojas, clínicas e ambientes corporativos em Vila Velha e na Grande Vitória.</p>
+            <p>Sim. A equipe atende <strong>residências, apartamentos, condomínios, lojas, clínicas e ambientes corporativos</strong> em Vila Velha e na Grande Vitória.</p>
           </details>
           <details>
             <summary>Quais pisos podem ser restaurados?</summary>
-            <p>Mármore, granito, porcelanato, Pedra São Tomé, pedras naturais e diversos revestimentos podem receber tratamento conforme o estado e o uso do ambiente.</p>
+            <p><strong>Mármore, granito, porcelanato, Pedra São Tomé, pedras naturais</strong> e diversos revestimentos podem receber tratamento conforme o estado e o uso do ambiente.</p>
           </details>
           <details>
             <summary>Como pedir um orçamento?</summary>
-            <p>Entre em contato pelo telefone ou WhatsApp, informe o tipo de piso, metragem aproximada, cidade e envie fotos do local para uma avaliação inicial.</p>
+            <p>Entre em contato pelo telefone ou WhatsApp, informe o <strong>tipo de piso, metragem aproximada, cidade</strong> e envie fotos do local para uma avaliação inicial.</p>
           </details>
           <details>
             <summary>Por que não contratar um pedreiro comum para polir meu piso?</summary>
-            <p>Pisos como mármore, granito, porcelanato e Pedra São Tomé precisam de maquinário diamantado, produtos específicos e leitura técnica do material. Um processo errado pode abrir manchas, riscar a superfície ou tirar o acabamento, fazendo o barato sair caro.</p>
+            <p>Pisos como mármore, granito, porcelanato e Pedra São Tomé precisam de <strong>maquinário diamantado, produtos específicos e leitura técnica do material</strong>. Um processo errado pode abrir manchas, riscar a superfície ou tirar o acabamento, fazendo o barato sair caro.</p>
           </details>
         </div>
       </div>
@@ -1204,7 +1220,7 @@
           <div>
             <span class="eyebrow">Fale com a Politudo</span>
             <h2>Agende um diagnóstico gratuito para seu piso</h2>
-            <p class="section-lead">Envie fotos do ambiente e receba orientação sobre o melhor tratamento para recuperar brilho, proteger contra manchas e conservar seu piso sem trocar o revestimento.</p>
+            <p class="section-lead">Envie fotos do ambiente e receba orientação sobre o melhor tratamento para <strong>recuperar brilho, proteger contra manchas e conservar seu piso</strong> sem trocar o revestimento.</p>
             <ul class="contact-list">
               <li><strong>Telefone e WhatsApp:</strong> <a href="tel:+5527997419868">(27) 99741-9868</a></li>
               <li><strong>Endereço:</strong> Rua Belo Horizonte, 397, 2 andar - Itapuã, Vila Velha - ES, 29101-609</li>
@@ -1220,7 +1236,7 @@
           </div>
           <aside class="info-card">
             <h3>Politudo Restauradora</h3>
-            <p>Empresa especializada na prevenção, restauração e tratamento de pisos, revestimentos e conservação de ambientes.</p>
+            <p>Empresa especializada na <strong>prevenção, restauração e tratamento de pisos</strong>, revestimentos e conservação de ambientes.</p>
             <p><strong>Serviços:</strong> polimento, impermeabilização, limpeza, restauração e revitalização.</p>
             <p><strong>Região:</strong> Vila Velha, Vitória, Serra, Cariacica, Itapuã, Praia da Costa, Itaparica, Jardim Camburi, Praia do Canto e Enseada do Suá.</p>
           </aside>
