@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Empresa de Restauração e Polimento de Pisos em Vila Velha | Politudo</title>
-  <meta name="description" content="Recupere o brilho de piso novo sem trocar o revestimento. Polimento de mármore, granito, porcelanato e Pedra São Tomé em Vila Velha, Vitória e Grande Vitória.">
-  <meta name="keywords" content="polimento de piso Vila Velha, restauração de piso Grande Vitória, limpeza de piso ES, impermeabilização de piso Vila Velha, polimento de mármore Vitória, polimento de granito Serra, limpeza porcelanato Cariacica">
+  <title>Empresa de Restauração e Polimento de Pisos na Grande Vitória | Politudo</title>
+  <meta name="description" content="Recupere o brilho de piso novo sem trocar o revestimento. Polimento, restauração, limpeza técnica e impermeabilização de pisos em toda a Grande Vitória.">
+  <meta name="keywords" content="polimento de piso Grande Vitória, restauração de piso Grande Vitória, limpeza de piso ES, impermeabilização de piso Grande Vitória, polimento de mármore Grande Vitória, polimento de granito ES, limpeza de porcelanato Grande Vitória">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#333b78">
-  <meta property="og:title" content="Politudo Restauradora | Polimento de pisos em Vila Velha">
-  <meta property="og:description" content="Recupere mármore, granito e porcelanato com polimento, limpeza técnica e impermeabilização na Grande Vitória.">
+  <meta property="og:title" content="Politudo Restauradora | Polimento de pisos na Grande Vitória">
+  <meta property="og:description" content="Recupere mármore, granito, porcelanato e concreto com polimento, limpeza técnica e impermeabilização em toda a Grande Vitória.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="servicos-realizados/WhatsApp%20Image%202026-05-12%20at%2015.16.13.jpeg">
   <style>
@@ -356,6 +356,51 @@
       font-size: .96rem;
     }
 
+    .section-cta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-top: 28px;
+      padding: 18px 20px;
+      border-radius: 8px;
+      background: var(--navy);
+      color: var(--white);
+      box-shadow: 0 12px 30px rgba(22, 26, 50, .12);
+    }
+
+    .section-cta.light {
+      background: var(--white);
+      color: var(--ink);
+      border: 1px solid var(--line);
+    }
+
+    .section-cta strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--yellow);
+      font-size: 1.05rem;
+      line-height: 1.2;
+    }
+
+    .section-cta.light strong {
+      color: var(--navy);
+    }
+
+    .section-cta span {
+      display: block;
+      color: rgba(255, 255, 255, .78);
+      font-size: .94rem;
+    }
+
+    .section-cta.light span {
+      color: #555d6d;
+    }
+
+    .section-cta .btn {
+      flex: 0 0 auto;
+    }
+
     .split {
       background: var(--white);
     }
@@ -388,6 +433,14 @@
     .image-stack img:last-child {
       height: 320px;
       border: 7px solid var(--paper);
+    }
+
+    .image-stack.single {
+      grid-template-columns: 1fr;
+    }
+
+    .image-stack.single img:first-child {
+      height: 520px;
     }
 
     .checks {
@@ -498,6 +551,93 @@
       color: var(--white);
       font-weight: 800;
       font-size: .92rem;
+    }
+
+    .before-after {
+      background: var(--white);
+    }
+
+    .proof-case {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(290px, .45fr);
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .before-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .before-grid figure,
+    .field-card {
+      margin: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      background: #eef1f4;
+      border: 1px solid var(--line);
+      box-shadow: 0 10px 28px rgba(22, 26, 50, .08);
+    }
+
+    .before-grid img {
+      width: 100%;
+      height: 330px;
+      object-fit: cover;
+    }
+
+    .before-grid figcaption {
+      padding: 12px 14px;
+      color: #343a4a;
+      font-weight: 900;
+    }
+
+    .field-card {
+      display: grid;
+      align-content: start;
+      background: var(--paper);
+    }
+
+    .field-card > img:first-child {
+      width: 100%;
+      height: 390px;
+      object-fit: contain;
+      background: var(--white);
+    }
+
+    .field-card-body {
+      display: grid;
+      gap: 14px;
+      padding: 20px;
+    }
+
+    .field-card-body h3 {
+      margin: 0;
+      color: var(--navy);
+      font-size: 1.35rem;
+      line-height: 1.15;
+    }
+
+    .field-card-body p {
+      margin: 0;
+      color: #555d6d;
+    }
+
+    .mascot-strip {
+      display: grid;
+      grid-template-columns: 82px minmax(0, 1fr);
+      gap: 14px;
+      align-items: center;
+      padding: 14px;
+      border-radius: 8px;
+      background: var(--white);
+      border: 1px solid var(--line);
+    }
+
+    .mascot-strip img {
+      width: 82px;
+      aspect-ratio: 1;
+      object-fit: contain;
     }
 
     .reviews {
@@ -691,6 +831,7 @@
       .section-head,
       .split-grid,
       .areas,
+      .proof-case,
       .contact-box {
         grid-template-columns: 1fr;
       }
@@ -794,6 +935,16 @@
         font-size: .84rem;
       }
 
+      .section-cta {
+        align-items: stretch;
+        flex-direction: column;
+        padding: 18px;
+      }
+
+      .section-cta .btn {
+        width: 100%;
+      }
+
       .proof {
         padding: 6px 10px;
       }
@@ -823,6 +974,7 @@
       .faq-grid,
       .city-list,
       .gallery,
+      .before-grid,
       .material-row {
         grid-template-columns: 1fr;
       }
@@ -835,11 +987,17 @@
         grid-row: span 1;
       }
 
+      .before-grid img,
+      .field-card > img:first-child {
+        height: 280px;
+      }
+
       .image-stack {
         grid-template-columns: 1fr;
       }
 
       .image-stack img:first-child,
+      .image-stack.single img:first-child,
       .image-stack img:last-child {
         height: 320px;
       }
@@ -871,7 +1029,7 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Politudo Restauradora",
-    "description": "Empresa especializada na prevenção, restauração e tratamento de pisos, revestimentos e conservação de ambientes na Grande Vitória.",
+    "description": "Empresa especializada na prevenção, restauração e tratamento de pisos, revestimentos e conservação de ambientes em toda a Grande Vitória.",
     "image": "POLITUDO_Logo.cdr/previews/page1.png",
     "telephone": "+55 27 99741-9868",
     "priceRange": "$$",
@@ -901,7 +1059,7 @@
       {
         "@type": "Review",
         "author": {"@type": "Person", "name": "João Borloth"},
-        "reviewBody": "Serviço profissional em chão de Pedra de São Tomé.",
+        "reviewBody": "Serviço profissional em piso de concreto.",
         "reviewRating": {"@type": "Rating", "ratingValue": "5"}
       },
       {
@@ -956,8 +1114,8 @@
       <div class="section-inner">
         <div>
           <span class="eyebrow">Polimento, limpeza e impermeabilização</span>
-          <h1>Empresa de Restauração e Polimento de Pisos em Vila Velha e Grande Vitória</h1>
-          <p class="hero-text">Recupere o brilho de <strong>"piso novo"</strong> sem precisar trocar o revestimento. Especialistas em <strong>polimento e restauração de mármore, granito e porcelanato</strong>, com atendimento rápido em <strong>Vila Velha e toda a Grande Vitória</strong>.</p>
+          <h1>Empresa de Restauração e Polimento de Pisos na Grande Vitória</h1>
+          <p class="hero-text">Recupere o brilho de <strong>"piso novo"</strong> sem precisar trocar o revestimento. Especialistas em <strong>polimento, restauração, limpeza técnica e impermeabilização</strong> de mármore, granito, porcelanato, concreto e outros revestimentos em <strong>toda a Grande Vitória</strong>.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="https://wa.me/5527997419868?text=Ola%2C%20quero%20um%20diagnostico%20gratuito%20para%20meu%20piso.">
               <svg class="whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16.04 3.2c-7.05 0-12.78 5.65-12.78 12.6 0 2.38.68 4.7 1.96 6.72L3.14 28.8l6.52-2.02a12.9 12.9 0 0 0 6.38 1.66c7.05 0 12.78-5.65 12.78-12.6S23.09 3.2 16.04 3.2Zm0 22.98c-2.05 0-4.05-.6-5.76-1.72l-.41-.27-3.86 1.2 1.23-3.72-.28-.43a10.22 10.22 0 0 1-1.58-5.44c0-5.69 4.78-10.32 10.66-10.32 5.88 0 10.66 4.63 10.66 10.32 0 5.7-4.78 10.38-10.66 10.38Zm5.84-7.74c-.32-.16-1.9-.92-2.2-1.03-.29-.1-.5-.16-.71.16-.21.31-.82 1.03-1 1.24-.19.21-.37.24-.69.08-.32-.16-1.35-.49-2.57-1.56-.95-.83-1.59-1.86-1.78-2.17-.19-.32-.02-.49.14-.65.15-.14.32-.37.48-.55.16-.19.21-.32.32-.53.1-.21.05-.4-.03-.55-.08-.16-.71-1.69-.98-2.32-.26-.61-.52-.53-.71-.54h-.61c-.21 0-.55.08-.84.4-.29.31-1.11 1.07-1.11 2.61 0 1.53 1.14 3.02 1.3 3.23.16.21 2.25 3.38 5.45 4.74.76.32 1.36.51 1.82.65.77.24 1.47.21 2.02.13.62-.09 1.9-.77 2.17-1.5.27-.74.27-1.37.19-1.5-.08-.13-.29-.21-.61-.37Z"/></svg>
@@ -972,11 +1130,11 @@
             </div>
             <div class="proof">
               <strong>Itapuã</strong>
-              <span>base em Vila Velha</span>
+              <span>base operacional em Vila Velha</span>
             </div>
             <div class="proof">
               <strong>Grande Vitória</strong>
-              <span>atendimento regional</span>
+              <span>todos os serviços na região</span>
             </div>
           </div>
         </div>
@@ -1048,25 +1206,44 @@
             <p>Recupere <strong>cor, uniformidade e sensação de piso novo</strong> com maquinário e produtos adequados para cada superfície.</p>
           </article>
         </div>
+        <div class="section-cta">
+          <div>
+            <strong>Não sabe qual tratamento seu piso precisa?</strong>
+            <span>Envie fotos pelo WhatsApp e receba uma orientação inicial da equipe em toda a Grande Vitória.</span>
+          </div>
+          <a class="btn btn-primary" href="https://wa.me/5527997419868?text=Ola%2C%20tenho%20um%20piso%20manchado%20ou%20sem%20brilho%20e%20quero%20saber%20qual%20tratamento%20%C3%A9%20indicado.">
+            <svg class="whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16.04 3.2c-7.05 0-12.78 5.65-12.78 12.6 0 2.38.68 4.7 1.96 6.72L3.14 28.8l6.52-2.02a12.9 12.9 0 0 0 6.38 1.66c7.05 0 12.78-5.65 12.78-12.6S23.09 3.2 16.04 3.2Zm0 22.98c-2.05 0-4.05-.6-5.76-1.72l-.41-.27-3.86 1.2 1.23-3.72-.28-.43a10.22 10.22 0 0 1-1.58-5.44c0-5.69 4.78-10.32 10.66-10.32 5.88 0 10.66 4.63 10.66 10.32 0 5.7-4.78 10.38-10.66 10.38Zm5.84-7.74c-.32-.16-1.9-.92-2.2-1.03-.29-.1-.5-.16-.71.16-.21.31-.82 1.03-1 1.24-.19.21-.37.24-.69.08-.32-.16-1.35-.49-2.57-1.56-.95-.83-1.59-1.86-1.78-2.17-.19-.32-.02-.49.14-.65.15-.14.32-.37.48-.55.16-.19.21-.32.32-.53.1-.21.05-.4-.03-.55-.08-.16-.71-1.69-.98-2.32-.26-.61-.52-.53-.71-.54h-.61c-.21 0-.55.08-.84.4-.29.31-1.11 1.07-1.11 2.61 0 1.53 1.14 3.02 1.3 3.23.16.21 2.25 3.38 5.45 4.74.76.32 1.36.51 1.82.65.77.24 1.47.21 2.02.13.62-.09 1.9-.77 2.17-1.5.27-.74.27-1.37.19-1.5-.08-.13-.29-.21-.61-.37Z"/></svg>
+            Pedir avaliação por foto
+          </a>
+        </div>
       </div>
     </section>
 
     <section class="split">
       <div class="section-inner split-grid">
-        <div class="image-stack">
-          <img src="servicos-realizados/WhatsApp Image 2026-05-12 at 15.16.16.jpeg" alt="Profissional da Politudo restaurando piso em área de varanda">
-          <img src="servicos-realizados/antesxdepois.jpg" alt="Antes e depois de polimento e revitalização de piso">
+        <div class="image-stack single">
+          <img src="servicos-realizados/proceso.png" alt="Processo técnico de restauração e polimento de piso realizado pela Politudo">
         </div>
         <div>
           <span class="eyebrow">Método de trabalho</span>
           <h2>Processo técnico para reduzir o risco de dano ao seu revestimento</h2>
-          <p class="section-lead"><strong>Mármore, granito, porcelanato e Pedra São Tomé</strong> exigem abrasivos, produtos e pressão corretos. A Politudo atua na prevenção, restauração e tratamento de pisos, revestimentos e conservação de ambientes com <strong>critério antes de qualquer intervenção</strong>.</p>
+          <p class="section-lead"><strong>Mármore, granito, porcelanato e concreto</strong> exigem abrasivos, produtos e pressão corretos. A Politudo atua na prevenção, restauração e tratamento de pisos, revestimentos e conservação de ambientes com <strong>critério antes de qualquer intervenção</strong>.</p>
           <ul class="checks">
             <li>Análise do tipo de pedra, porcelanato ou revestimento antes do início.</li>
             <li>Proteção das áreas próximas e cuidado com rodapés, paredes, portas e mobiliário.</li>
             <li>Processo indicado para recuperar brilho, remover marcas e proteger o piso sem improviso.</li>
             <li>Atendimento para arquitetos, síndicos, apartamentos, casas, condomínios, lojas e empresas.</li>
           </ul>
+          <div class="section-cta light">
+            <div>
+              <strong>Quer evitar tentativa e erro no seu revestimento?</strong>
+              <span>Fale com a equipe antes de usar produto ou contratar um serviço sem avaliação técnica.</span>
+            </div>
+            <a class="btn btn-primary" href="https://wa.me/5527997419868?text=Ola%2C%20quero%20uma%20avaliacao%20tecnica%20antes%20de%20mexer%20no%20meu%20piso.">
+              <svg class="whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16.04 3.2c-7.05 0-12.78 5.65-12.78 12.6 0 2.38.68 4.7 1.96 6.72L3.14 28.8l6.52-2.02a12.9 12.9 0 0 0 6.38 1.66c7.05 0 12.78-5.65 12.78-12.6S23.09 3.2 16.04 3.2Zm0 22.98c-2.05 0-4.05-.6-5.76-1.72l-.41-.27-3.86 1.2 1.23-3.72-.28-.43a10.22 10.22 0 0 1-1.58-5.44c0-5.69 4.78-10.32 10.66-10.32 5.88 0 10.66 4.63 10.66 10.32 0 5.7-4.78 10.38-10.66 10.38Zm5.84-7.74c-.32-.16-1.9-.92-2.2-1.03-.29-.1-.5-.16-.71.16-.21.31-.82 1.03-1 1.24-.19.21-.37.24-.69.08-.32-.16-1.35-.49-2.57-1.56-.95-.83-1.59-1.86-1.78-2.17-.19-.32-.02-.49.14-.65.15-.14.32-.37.48-.55.16-.19.21-.32.32-.53.1-.21.05-.4-.03-.55-.08-.16-.71-1.69-.98-2.32-.26-.61-.52-.53-.71-.54h-.61c-.21 0-.55.08-.84.4-.29.31-1.11 1.07-1.11 2.61 0 1.53 1.14 3.02 1.3 3.23.16.21 2.25 3.38 5.45 4.74.76.32 1.36.51 1.82.65.77.24 1.47.21 2.02.13.62-.09 1.9-.77 2.17-1.5.27-.74.27-1.37.19-1.5-.08-.13-.29-.21-.61-.37Z"/></svg>
+              Tirar dúvida no WhatsApp
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -1076,9 +1253,9 @@
         <div class="section-head">
           <div>
             <span class="eyebrow">Materiais atendidos</span>
-            <h2>Restauração de Mármore, Granito, Porcelanato e Pedra São Tomé</h2>
+            <h2>Restauração de Mármore, Granito, Porcelanato e Concreto</h2>
           </div>
-          <p class="section-lead">O foco é <strong>restaurar sem improviso</strong>: cada material pede abrasivo, produto, pressão e finalização corretos para evitar manchas, riscos e perda de acabamento. Também atendemos quem busca <strong>como limpar Pedra São Tomé encardida</strong> ou <strong>restaurar porcelanato em Vitória ES</strong>.</p>
+          <p class="section-lead">O foco é <strong>restaurar sem improviso</strong>: cada material pede abrasivo, produto, pressão e finalização corretos para evitar manchas, riscos e perda de acabamento. Atendemos demandas de <strong>limpeza e revitalização de concreto encardido</strong>, restauração de porcelanato, polimento de mármore e tratamento de granito em <strong>toda a Grande Vitória</strong>.</p>
         </div>
         <div class="material-row" aria-label="Tipos de pisos">
           <article class="material-card">
@@ -1094,8 +1271,8 @@
             <span>Porcelanato</span>
           </article>
           <article class="material-card">
-            <img src="assets/materiais/pedra-sao-tome.jpg" alt="Piso rústico de Pedra São Tomé">
-            <span>Pedra São Tomé</span>
+            <img src="assets/materiais/concreto-polido.png" alt="Piso de concreto polido com brilho restaurado">
+            <span>Concreto</span>
           </article>
           <article class="material-card">
             <img src="assets/materiais/pedras-naturais.jpg" alt="Piso com pedras naturais em tons variados">
@@ -1113,6 +1290,16 @@
             <img src="assets/materiais/areas-condominiais.jpg" alt="Área condominial com piso de pedra polido">
             <span>Áreas condominiais</span>
           </article>
+        </div>
+        <div class="section-cta">
+          <div>
+            <strong>Seu material não apareceu na lista?</strong>
+            <span>Envie uma foto do piso. A equipe identifica o revestimento e orienta o melhor caminho.</span>
+          </div>
+          <a class="btn btn-primary" href="https://wa.me/5527997419868?text=Ola%2C%20quero%20enviar%20uma%20foto%20do%20meu%20piso%20para%20identificar%20o%20material%20e%20o%20tratamento%20indicado.">
+            <svg class="whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16.04 3.2c-7.05 0-12.78 5.65-12.78 12.6 0 2.38.68 4.7 1.96 6.72L3.14 28.8l6.52-2.02a12.9 12.9 0 0 0 6.38 1.66c7.05 0 12.78-5.65 12.78-12.6S23.09 3.2 16.04 3.2Zm0 22.98c-2.05 0-4.05-.6-5.76-1.72l-.41-.27-3.86 1.2 1.23-3.72-.28-.43a10.22 10.22 0 0 1-1.58-5.44c0-5.69 4.78-10.32 10.66-10.32 5.88 0 10.66 4.63 10.66 10.32 0 5.7-4.78 10.38-10.66 10.38Zm5.84-7.74c-.32-.16-1.9-.92-2.2-1.03-.29-.1-.5-.16-.71.16-.21.31-.82 1.03-1 1.24-.19.21-.37.24-.69.08-.32-.16-1.35-.49-2.57-1.56-.95-.83-1.59-1.86-1.78-2.17-.19-.32-.02-.49.14-.65.15-.14.32-.37.48-.55.16-.19.21-.32.32-.53.1-.21.05-.4-.03-.55-.08-.16-.71-1.69-.98-2.32-.26-.61-.52-.53-.71-.54h-.61c-.21 0-.55.08-.84.4-.29.31-1.11 1.07-1.11 2.61 0 1.53 1.14 3.02 1.3 3.23.16.21 2.25 3.38 5.45 4.74.76.32 1.36.51 1.82.65.77.24 1.47.21 2.02.13.62-.09 1.9-.77 2.17-1.5.27-.74.27-1.37.19-1.5-.08-.13-.29-.21-.61-.37Z"/></svg>
+            Enviar foto do piso
+          </a>
         </div>
       </div>
     </section>
@@ -1148,6 +1335,63 @@
             <figcaption>Antes e depois</figcaption>
           </figure>
         </div>
+        <div class="section-cta light">
+          <div>
+            <strong>Quer um resultado parecido no seu ambiente?</strong>
+            <span>Conte onde fica o imóvel, envie fotos do piso e receba a próxima orientação.</span>
+          </div>
+          <a class="btn btn-primary" href="https://wa.me/5527997419868?text=Ola%2C%20vi%20os%20resultados%20da%20Politudo%20e%20quero%20avaliar%20meu%20piso.">
+            <svg class="whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16.04 3.2c-7.05 0-12.78 5.65-12.78 12.6 0 2.38.68 4.7 1.96 6.72L3.14 28.8l6.52-2.02a12.9 12.9 0 0 0 6.38 1.66c7.05 0 12.78-5.65 12.78-12.6S23.09 3.2 16.04 3.2Zm0 22.98c-2.05 0-4.05-.6-5.76-1.72l-.41-.27-3.86 1.2 1.23-3.72-.28-.43a10.22 10.22 0 0 1-1.58-5.44c0-5.69 4.78-10.32 10.66-10.32 5.88 0 10.66 4.63 10.66 10.32 0 5.7-4.78 10.38-10.66 10.38Zm5.84-7.74c-.32-.16-1.9-.92-2.2-1.03-.29-.1-.5-.16-.71.16-.21.31-.82 1.03-1 1.24-.19.21-.37.24-.69.08-.32-.16-1.35-.49-2.57-1.56-.95-.83-1.59-1.86-1.78-2.17-.19-.32-.02-.49.14-.65.15-.14.32-.37.48-.55.16-.19.21-.32.32-.53.1-.21.05-.4-.03-.55-.08-.16-.71-1.69-.98-2.32-.26-.61-.52-.53-.71-.54h-.61c-.21 0-.55.08-.84.4-.29.31-1.11 1.07-1.11 2.61 0 1.53 1.14 3.02 1.3 3.23.16.21 2.25 3.38 5.45 4.74.76.32 1.36.51 1.82.65.77.24 1.47.21 2.02.13.62-.09 1.9-.77 2.17-1.5.27-.74.27-1.37.19-1.5-.08-.13-.29-.21-.61-.37Z"/></svg>
+            Quero avaliar meu piso
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="antes-depois" class="before-after">
+      <div class="section-inner">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Antes e depois</span>
+            <h2>Transformação real em pisos internos e externos</h2>
+          </div>
+          <p class="section-lead">A diferença aparece na cor, no brilho e na uniformidade do piso. As fotos ajudam a equipe a entender o estado do material e indicar o processo correto antes de iniciar o serviço.</p>
+        </div>
+        <div class="proof-case">
+          <div class="before-grid" aria-label="Comparativos de antes e depois">
+            <figure>
+              <img src="assets/antes-depois/Captura de tela 2026-05-13 120146.png" alt="Antes e depois de piso de banheiro restaurado">
+              <figcaption>Banheiro com brilho recuperado</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/antes-depois/Captura de tela 2026-05-13 120212.png" alt="Antes e depois de piso revitalizado pela Politudo">
+              <figcaption>Limpeza e revitalização técnica</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/antes-depois/Captura de tela 2026-05-13 120231.png" alt="Antes e depois de área externa tratada">
+              <figcaption>Área externa renovada</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/antes-depois/Captura de tela 2026-05-13 120302.png" alt="Antes e depois de piso externo de tijolinho limpo e revitalizado">
+              <figcaption>Tijolinho com cor restaurada</figcaption>
+            </figure>
+          </div>
+          <aside class="field-card">
+            <img src="assets/caminhao-plitudo.jpeg" alt="Caminhão identificado da Politudo usado pela equipe nos atendimentos">
+            <div class="field-card-body">
+              <h3>Equipe identificada, material certo e atendimento no local</h3>
+              <p>A Politudo vai até residências, condomínios e empresas em toda a Grande Vitória com equipamento próprio para avaliar, limpar, polir, impermeabilizar e revitalizar cada superfície.</p>
+              <div class="mascot-strip">
+                <img src="assets/mascote-politudo.png" alt="Mascote da Politudo com politriz">
+                <p><strong>Diagnóstico por foto no WhatsApp:</strong> envie imagens do piso e receba a orientação inicial da equipe.</p>
+              </div>
+              <a class="btn btn-primary" href="https://wa.me/5527997419868?text=Ola%2C%20quero%20um%20diagnostico%20por%20foto%20para%20restaurar%20meu%20piso.">
+                <svg class="whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16.04 3.2c-7.05 0-12.78 5.65-12.78 12.6 0 2.38.68 4.7 1.96 6.72L3.14 28.8l6.52-2.02a12.9 12.9 0 0 0 6.38 1.66c7.05 0 12.78-5.65 12.78-12.6S23.09 3.2 16.04 3.2Zm0 22.98c-2.05 0-4.05-.6-5.76-1.72l-.41-.27-3.86 1.2 1.23-3.72-.28-.43a10.22 10.22 0 0 1-1.58-5.44c0-5.69 4.78-10.32 10.66-10.32 5.88 0 10.66 4.63 10.66 10.32 0 5.7-4.78 10.38-10.66 10.38Zm5.84-7.74c-.32-.16-1.9-.92-2.2-1.03-.29-.1-.5-.16-.71.16-.21.31-.82 1.03-1 1.24-.19.21-.37.24-.69.08-.32-.16-1.35-.49-2.57-1.56-.95-.83-1.59-1.86-1.78-2.17-.19-.32-.02-.49.14-.65.15-.14.32-.37.48-.55.16-.19.21-.32.32-.53.1-.21.05-.4-.03-.55-.08-.16-.71-1.69-.98-2.32-.26-.61-.52-.53-.71-.54h-.61c-.21 0-.55.08-.84.4-.29.31-1.11 1.07-1.11 2.61 0 1.53 1.14 3.02 1.3 3.23.16.21 2.25 3.38 5.45 4.74.76.32 1.36.51 1.82.65.77.24 1.47.21 2.02.13.62-.09 1.9-.77 2.17-1.5.27-.74.27-1.37.19-1.5-.08-.13-.29-.21-.61-.37Z"/></svg>
+                Enviar fotos agora
+              </a>
+            </div>
+          </aside>
+        </div>
       </div>
     </section>
 
@@ -1168,8 +1412,8 @@
       <div class="section-inner areas">
         <div>
           <span class="eyebrow">Atendimento local</span>
-          <h2>Atendemos residências, condomínios e empresas em Itapuã, Praia da Costa e região</h2>
-          <p class="section-lead">Com base em <strong>Itapuã</strong>, a Politudo é referência em <strong>empresa de polimento de mármore em Vila Velha</strong>, restauração de porcelanato em Vitória ES e limpeza técnica de pisos na <strong>Grande Vitória</strong>.</p>
+          <h2>Atendemos residências, condomínios e empresas em toda a Grande Vitória</h2>
+          <p class="section-lead">Com base em <strong>Itapuã, Vila Velha</strong>, a Politudo é referência em <strong>toda a Grande Vitória</strong> em polimento, restauração, limpeza técnica, impermeabilização e revitalização de pisos.</p>
         </div>
         <div class="city-list" aria-label="Cidades atendidas">
           <div class="city">Vila Velha</div>
@@ -1191,7 +1435,7 @@
             <span class="eyebrow">Dúvidas comuns</span>
             <h2>Perguntas sobre restauração de pisos</h2>
           </div>
-          <p class="section-lead">Respostas objetivas para quem procura <strong>polimento de piso, impermeabilização ou limpeza especializada</strong> na Grande Vitória.</p>
+          <p class="section-lead">Respostas objetivas para quem procura <strong>polimento de piso, impermeabilização ou limpeza especializada</strong> em toda a Grande Vitória.</p>
         </div>
         <div class="faq-grid">
           <details>
@@ -1200,11 +1444,11 @@
           </details>
           <details>
             <summary>A Politudo atende condomínios e empresas?</summary>
-            <p>Sim. A equipe atende <strong>residências, apartamentos, condomínios, lojas, clínicas e ambientes corporativos</strong> em Vila Velha e na Grande Vitória.</p>
+            <p>Sim. A equipe atende <strong>residências, apartamentos, condomínios, lojas, clínicas e ambientes corporativos</strong> em toda a Grande Vitória.</p>
           </details>
           <details>
             <summary>Quais pisos podem ser restaurados?</summary>
-            <p><strong>Mármore, granito, porcelanato, Pedra São Tomé, pedras naturais</strong> e diversos revestimentos podem receber tratamento conforme o estado e o uso do ambiente.</p>
+            <p><strong>Mármore, granito, porcelanato, concreto, pedras naturais</strong> e diversos revestimentos podem receber tratamento conforme o estado e o uso do ambiente.</p>
           </details>
           <details>
             <summary>Como pedir um orçamento?</summary>
@@ -1212,7 +1456,7 @@
           </details>
           <details>
             <summary>Por que não contratar um pedreiro comum para polir meu piso?</summary>
-            <p>Pisos como mármore, granito, porcelanato e Pedra São Tomé precisam de <strong>maquinário diamantado, produtos específicos e leitura técnica do material</strong>. Um processo errado pode abrir manchas, riscar a superfície ou tirar o acabamento, fazendo o barato sair caro.</p>
+            <p>Pisos como mármore, granito, porcelanato e concreto precisam de <strong>maquinário diamantado, produtos específicos e leitura técnica do material</strong>. Um processo errado pode abrir manchas, riscar a superfície ou tirar o acabamento, fazendo o barato sair caro.</p>
           </details>
         </div>
       </div>
@@ -1240,9 +1484,9 @@
           </div>
           <aside class="info-card">
             <h3>Politudo Restauradora</h3>
-            <p>Empresa especializada na <strong>prevenção, restauração e tratamento de pisos</strong>, revestimentos e conservação de ambientes.</p>
+            <p>Empresa especializada na <strong>prevenção, restauração e tratamento de pisos</strong>, revestimentos e conservação de ambientes em toda a Grande Vitória.</p>
             <p><strong>Serviços:</strong> polimento, impermeabilização, limpeza, restauração e revitalização.</p>
-            <p><strong>Região:</strong> Vila Velha, Vitória, Serra, Cariacica, Itapuã, Praia da Costa, Itaparica, Jardim Camburi, Praia do Canto e Enseada do Suá.</p>
+            <p><strong>Região:</strong> toda a Grande Vitória, incluindo Vila Velha, Vitória, Serra, Cariacica, Viana, Guarapari e Fundão.</p>
           </aside>
         </div>
       </div>
@@ -1251,7 +1495,7 @@
 
   <footer>
     <div class="section-inner">
-      <span>&copy; 2026 Politudo Restauradora. Polimento, impermeabilização e limpeza de pisos em Vila Velha e Grande Vitória.</span>
+      <span>&copy; 2026 Politudo Restauradora. Polimento, impermeabilização e limpeza de pisos em toda a Grande Vitória.</span>
       <span>Vila Velha - Espírito Santo</span>
     </div>
   </footer>
