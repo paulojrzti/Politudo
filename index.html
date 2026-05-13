@@ -8,7 +8,10 @@
   <meta name="keywords" content="polimento de piso Grande Vitória, restauração de piso Grande Vitória, limpeza de piso ES, impermeabilização de piso Grande Vitória, polimento de mármore Grande Vitória, polimento de granito ES, limpeza de porcelanato Grande Vitória">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#333b78">
-  <meta property="og:title" content="Politudo Restauradora e Distribuidora | Restauração de pisos">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="preload" as="image" href="assets/optimized/hero-bg.jpg" fetchpriority="high">
+  <meta property="og:title" content="Politudo Restauradora | Restauração de pisos">
   <meta property="og:description" content="Polimento, limpeza técnica e impermeabilização de mármore, granito e porcelanato em toda a Grande Vitória.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="servicos-realizados/WhatsApp%20Image%202026-05-12%20at%2015.16.13.jpeg">
@@ -171,7 +174,7 @@
       align-items: stretch;
       overflow: hidden;
       background: linear-gradient(90deg, rgba(10, 13, 34, .94), rgba(18, 23, 54, .78), rgba(10, 13, 34, .48)),
-        url("hero-bg.png") center / cover no-repeat;
+        url("assets/optimized/hero-bg.jpg") center / cover no-repeat;
       color: var(--white);
     }
 
@@ -518,6 +521,9 @@
     .gallery {
       display: grid;
       grid-template-columns: 1.2fr .8fr .8fr;
+      grid-template-areas:
+        "featured revitalization residential"
+        "featured cleaning before";
       grid-auto-rows: 220px;
       gap: 14px;
     }
@@ -530,14 +536,22 @@
       background: #dfe2e6;
     }
 
-    .gallery figure:first-child {
-      grid-row: span 2;
-    }
+    .gallery .featured-card { grid-area: featured; }
+    .gallery .revitalization-card { grid-area: revitalization; }
+    .gallery .residential-card { grid-area: residential; }
+    .gallery .cleaning-card { grid-area: cleaning; }
+    .gallery .before-card { grid-area: before; }
 
     .gallery img {
+      display: block;
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+
+    .gallery figure.revitalization-card img,
+    .gallery figure.residential-card img {
+      object-position: center center;
     }
 
     .gallery figcaption {
@@ -854,6 +868,10 @@
 
       .gallery {
         grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+          "featured featured"
+          "revitalization residential"
+          "cleaning before";
       }
     }
 
@@ -980,11 +998,13 @@
       }
 
       .gallery {
+        grid-template-areas:
+          "featured"
+          "revitalization"
+          "residential"
+          "cleaning"
+          "before";
         grid-auto-rows: 260px;
-      }
-
-      .gallery figure:first-child {
-        grid-row: span 1;
       }
 
       .before-grid img,
@@ -1028,7 +1048,7 @@
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Politudo Restauradora e Distribuidora",
+    "name": "Politudo Restauradora",
     "description": "Empresa especializada em polimento, limpeza técnica e impermeabilização de mármore, granito, porcelanato e outros revestimentos em toda a Grande Vitória.",
     "image": "POLITUDO_Logo.cdr/previews/page1.png",
     "telephone": "+55 27 99741-9868",
@@ -1093,7 +1113,7 @@
   <header>
     <nav class="nav" aria-label="Navegação principal">
       <a class="brand" href="#inicio" aria-label="Politudo Restauradora">
-        <img src="POLITUDO_Logo.cdr/previews/page1.png" alt="Politudo Restauradora e Distribuidora">
+        <img src="POLITUDO_Logo.cdr/previews/page1.png" alt="Politudo Restauradora">
       </a>
       <div class="nav-links" aria-label="Seções da página">
         <a href="#servicos">Serviços</a>
@@ -1113,8 +1133,8 @@
     <section class="hero" aria-label="Politudo Restauradora">
       <div class="section-inner">
         <div>
-          <span class="eyebrow">Politudo Restauradora e Distribuidora</span>
-          <h1>Restaure o luxo do seu piso sem o caos de uma reforma.</h1>
+          <span class="eyebrow">Politudo Restauradora</span>
+          <h1>Devolvendo a vida, o brilho e a durabilidade que seu piso merece.</h1>
           <p class="hero-text">Especialistas em <strong>polimento, limpeza técnica e impermeabilização</strong> de mármore, granito e porcelanato. Recuperamos o brilho espelhado e a proteção original do seu revestimento em <strong>toda a Grande Vitória</strong>.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="https://wa.me/5527997419868?text=Ola%2C%20quero%20um%20diagnostico%20gratuito%20para%20meu%20piso.">
@@ -1156,10 +1176,12 @@
           <article class="service">
             <div class="service-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24">
-                <path d="M4 15c4-1.8 7-1.8 10 0s5 1.8 6 0"/>
-                <path d="M5 10c3.4-1.4 6.2-1.4 9 0s4.5 1.4 5 0"/>
-                <path d="M4 19h16"/>
-                <path d="M7 6l1.2-2L9.5 6l2 1.2-2 1.2-1.3 2L7 8.4 5 7.2 7 6Z"/>
+                <path d="M3.5 19.5h17"/>
+                <path d="M7 15.5h10"/>
+                <circle cx="9" cy="12.5" r="3.2"/>
+                <path d="M11.4 10.3 17 5"/>
+                <path d="M15.2 4.2h3.6"/>
+                <path d="M12.2 12.5h4.3c1.3 0 2.3 1 2.3 2.3v.7H9"/>
               </svg>
             </div>
             <h3>Polimento de alta precisão</h3>
@@ -1168,10 +1190,10 @@
           <article class="service">
             <div class="service-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24">
-                <path d="M5 11V8a7 7 0 0 1 14 0v3"/>
-                <path d="M4 11h16v4.5c0 3.2-3.5 5.1-8 6-4.5-.9-8-2.8-8-6V11Z"/>
-                <path d="M9 15h6"/>
-                <path d="M12 13v4"/>
+                <path d="M4 11.5 12 5l8 6.5"/>
+                <path d="M6.5 10.5v8h5v-4h1v4h5v-8"/>
+                <path d="M14.5 8.5h3v3"/>
+                <path d="m14.5 11.5 3-3"/>
               </svg>
             </div>
             <h3>Valorização do patrimônio</h3>
@@ -1180,12 +1202,9 @@
           <article class="service">
             <div class="service-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24">
-                <path d="M4 16h16"/>
-                <path d="M7 12h10"/>
-                <path d="M9 8h6"/>
-                <path d="M5 20h14"/>
-                <path d="M18 4l.7 1.5L20 6.2l-1.3.7L18 8.4l-.7-1.5-1.3-.7 1.3-.7L18 4Z"/>
-                <path d="M6 5l.5 1 .9.5-.9.5-.5 1-.5-1-.9-.5.9-.5L6 5Z"/>
+                <path d="M12 21c-4.3-1.2-7-3.8-7-7.5V6.2L12 3l7 3.2v7.3c0 3.7-2.7 6.3-7 7.5Z"/>
+                <path d="M12 8.2s-3 3.2-3 5.1a3 3 0 0 0 6 0c0-1.9-3-5.1-3-5.1Z"/>
+                <path d="M9.6 17.8h4.8"/>
               </svg>
             </div>
             <h3>Blindagem importada</h3>
@@ -1208,7 +1227,7 @@
     <section class="split">
       <div class="section-inner split-grid">
         <div class="image-stack single">
-          <img src="servicos-realizados/proceso.png" alt="Processo técnico de restauração e polimento de piso realizado pela Politudo">
+          <img src="assets/optimized/proceso.jpg" width="970" height="981" loading="lazy" decoding="async" alt="Processo técnico de restauração e polimento de piso realizado pela Politudo">
         </div>
         <div>
           <span class="eyebrow">Método de trabalho</span>
@@ -1241,39 +1260,39 @@
             <span class="eyebrow">Tipos de pisos que atendemos</span>
             <h2>Mármores, granitos, porcelanatos e pisos especiais</h2>
           </div>
-          <p class="section-lead">Atuamos com <strong>polimento espelhado, fechamento de poros, limpeza de rejuntes, remoção de névoa, brilho químico e tratamento de alta resistência</strong> para áreas residenciais, comerciais e condominiais.</p>
+          <p class="section-lead">Atuamos com: <strong>polimento mecânico, tratamento de manchas causadas por ataque químico, impermeabilização de superfícies e polimento industrial</strong>.</p>
         </div>
         <div class="material-row" aria-label="Tipos de pisos">
           <article class="material-card">
-            <img src="assets/materiais/marmore.jpg" alt="Piso de mármore polido com veios claros">
+            <img src="assets/materiais/marmore.jpg" width="444" height="444" loading="lazy" decoding="async" alt="Piso de mármore polido com veios claros">
             <span>Mármores</span>
           </article>
           <article class="material-card">
-            <img src="assets/materiais/porcelanato.jpg" alt="Piso de porcelanato bege com acabamento brilhante">
+            <img src="assets/materiais/porcelanato.jpg" width="444" height="444" loading="lazy" decoding="async" alt="Piso de porcelanato bege com acabamento brilhante">
             <span>Porcelanatos e cerâmicas</span>
           </article>
           <article class="material-card">
-            <img src="assets/materiais/concreto-polido.png" alt="Piso de concreto polido com brilho restaurado">
+            <img src="assets/optimized/concreto-polido.jpg" width="700" height="700" loading="lazy" decoding="async" alt="Piso de concreto polido com brilho restaurado">
             <span>Concreto polido e granilite</span>
           </article>
           <article class="material-card">
-            <img src="assets/materiais/pedras-naturais.jpg" alt="Piso com pedras naturais em tons variados">
+            <img src="assets/materiais/pedras-naturais.jpg" width="444" height="444" loading="lazy" decoding="async" alt="Piso com pedras naturais em tons variados">
             <span>Granilite e pedras naturais</span>
           </article>
           <article class="material-card">
-            <img src="assets/materiais/revestimentos.jpg" alt="Revestimento de parede e piso em ambiente interno">
+            <img src="assets/materiais/revestimentos.jpg" width="444" height="444" loading="lazy" decoding="async" alt="Revestimento de parede e piso em ambiente interno">
             <span>Pisos especiais</span>
           </article>
           <article class="material-card">
-            <img src="assets/materiais/pisos-comerciais.jpg" alt="Piso comercial polido em corredor de loja">
+            <img src="assets/materiais/pisos-comerciais.jpg" width="444" height="444" loading="lazy" decoding="async" alt="Piso comercial polido em corredor de loja">
             <span>Pisos comerciais</span>
           </article>
           <article class="material-card">
-            <img src="assets/materiais/areas-condominiais.jpg" alt="Área condominial com piso de pedra polido">
+            <img src="assets/materiais/areas-condominiais.jpg" width="444" height="444" loading="lazy" decoding="async" alt="Área condominial com piso de pedra polido">
             <span>Áreas condominiais</span>
           </article>
           <article class="material-card">
-            <img src="assets/materiais/granito.jpg" alt="Piso de granito escuro polido">
+            <img src="assets/materiais/granito.jpg" width="444" height="444" loading="lazy" decoding="async" alt="Piso de granito escuro polido">
             <span>Granitos</span>
           </article>
         </div>
@@ -1300,24 +1319,24 @@
           <p class="section-lead">Fotos de trabalhos executados pela equipe, com foco em <strong>brilho, limpeza, uniformidade</strong> e recuperação do aspecto original do piso.</p>
         </div>
         <div class="gallery">
-          <figure>
-            <img src="servicos-realizados/WhatsApp Image 2026-05-12 at 15.16.13.jpeg" alt="Piso polido com reflexo em apartamento na Grande Vitória">
+          <figure class="featured-card">
+            <img src="assets/optimized/polimento-espelhado.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="Piso polido com reflexo em apartamento na Grande Vitória">
             <figcaption>Polimento com brilho espelhado</figcaption>
           </figure>
-          <figure>
-            <img src="servicos-realizados/WhatsApp Image 2026-05-12 at 15.16.13 (1).jpeg" alt="Piso restaurado em ambiente interno">
+          <figure class="revitalization-card">
+            <img src="assets/optimized/revitalizacao.jpg" width="900" height="1024" loading="lazy" decoding="async" alt="Piso restaurado em ambiente interno">
             <figcaption>Revitalização de ambiente interno</figcaption>
           </figure>
-          <figure>
-            <img src="servicos-realizados/WhatsApp Image 2026-05-12 at 15.16.16 (1).jpeg" alt="Tratamento de piso em área residencial">
+          <figure class="residential-card">
+            <img src="assets/optimized/residencial.jpg" width="900" height="909" loading="lazy" decoding="async" alt="Tratamento de piso em área residencial">
             <figcaption>Tratamento em área residencial</figcaption>
           </figure>
-          <figure>
-            <img src="servicos-realizados/IMG_2988.webp" alt="Limpeza e restauração de piso">
+          <figure class="cleaning-card">
+            <img src="servicos-realizados/IMG_2988.webp" width="526" height="956" loading="lazy" decoding="async" alt="Limpeza e restauração de piso">
             <figcaption>Limpeza técnica</figcaption>
           </figure>
-          <figure>
-            <img src="servicos-realizados/antesxdepois.jpg" alt="Antes e depois de piso restaurado">
+          <figure class="before-card">
+            <img src="servicos-realizados/antesxdepois.jpg" width="750" height="813" loading="lazy" decoding="async" alt="Antes e depois de piso restaurado">
             <figcaption>Antes e depois</figcaption>
           </figure>
         </div>
@@ -1346,29 +1365,29 @@
         <div class="proof-case">
           <div class="before-grid" aria-label="Comparativos de antes e depois">
             <figure>
-              <img src="assets/antes-depois/Captura de tela 2026-05-13 120146.png" alt="Antes e depois de piso de banheiro restaurado">
+              <img src="assets/optimized/antes-depois-banheiro.jpg" width="820" height="816" loading="lazy" decoding="async" alt="Antes e depois de piso de banheiro restaurado">
               <figcaption>Banheiro com brilho recuperado</figcaption>
             </figure>
             <figure>
-              <img src="assets/antes-depois/Captura de tela 2026-05-13 120212.png" alt="Antes e depois de piso revitalizado pela Politudo">
+              <img src="assets/optimized/antes-depois-revitalizacao.jpg" width="820" height="816" loading="lazy" decoding="async" alt="Antes e depois de piso revitalizado pela Politudo">
               <figcaption>Limpeza e revitalização técnica</figcaption>
             </figure>
             <figure>
-              <img src="assets/antes-depois/Captura de tela 2026-05-13 120231.png" alt="Antes e depois de área externa tratada">
+              <img src="assets/optimized/antes-depois-area-externa.jpg" width="816" height="820" loading="lazy" decoding="async" alt="Antes e depois de área externa tratada">
               <figcaption>Área externa renovada</figcaption>
             </figure>
             <figure>
-              <img src="assets/antes-depois/Captura de tela 2026-05-13 120302.png" alt="Antes e depois de piso externo de tijolinho limpo e revitalizado">
+              <img src="assets/optimized/antes-depois-tijolinho.jpg" width="818" height="820" loading="lazy" decoding="async" alt="Antes e depois de piso externo de tijolinho limpo e revitalizado">
               <figcaption>Tijolinho com cor restaurada</figcaption>
             </figure>
           </div>
           <aside class="field-card">
-            <img src="assets/caminhao-plitudo.jpeg" alt="Caminhão identificado da Politudo usado pela equipe nos atendimentos">
+            <img src="assets/caminhao-plitudo.jpeg" width="550" height="724" loading="lazy" decoding="async" alt="Caminhão identificado da Politudo usado pela equipe nos atendimentos">
             <div class="field-card-body">
               <h3>Equipe identificada, material certo e atendimento no local</h3>
               <p>A Politudo vai até residências, condomínios e empresas em toda a Grande Vitória com equipamento próprio para avaliar, limpar, polir, impermeabilizar e revitalizar cada superfície.</p>
               <div class="mascot-strip">
-                <img src="assets/mascote-politudo.png" alt="Mascote da Politudo com politriz">
+                <img src="assets/optimized/mascote-politudo.jpg" width="220" height="264" loading="lazy" decoding="async" alt="Mascote da Politudo com politriz">
                 <p><strong>Diagnóstico por foto no WhatsApp:</strong> envie imagens do piso e receba a orientação inicial da equipe.</p>
               </div>
               <a class="btn btn-primary" href="https://wa.me/5527997419868?text=Ola%2C%20quero%20um%20diagnostico%20por%20foto%20para%20restaurar%20meu%20piso.">
@@ -1446,7 +1465,7 @@
           </details>
           <details>
             <summary>Quanto tempo demora o serviço?</summary>
-            <p>A maioria dos atendimentos residenciais é concluída em <strong>1 ou 2 dias</strong>, permitindo o uso do ambiente logo após a finalização.</p>
+            <p>O prazo varia conforme o <strong>tamanho da área a ser executada</strong>, o estado do piso e o tipo de tratamento indicado. Após avaliar as fotos ou visitar o local, a equipe informa a previsão de execução.</p>
           </details>
           <details>
             <summary>Vocês atendem Guarapari e outras cidades?</summary>
